@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get "sign_up", to: "registrations#new"
   post "sign_up", to: "registrations#create"
 
+<<<<<<< HEAD
 
   get "sign_in", to: "sessions#new"
   post "sign_in", to: "sessions#create"
@@ -19,6 +20,8 @@ Rails.application.routes.draw do
 
   delete "logout", to: "sessions#destroy"
 
+=======
+>>>>>>> create sign up form
   root to: "main#index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
