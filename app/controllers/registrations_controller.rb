@@ -6,7 +6,10 @@ class RegistrationsController < ApplicationController
     def create
         @user = User.new(user_params)
         if @user.save
+<<<<<<< HEAD
             session[:user_id] = @user.id
+=======
+>>>>>>> create sign up form
             redirect_to root_path, notice: "Successfully created account"
         else
             render :new
@@ -18,9 +21,12 @@ class RegistrationsController < ApplicationController
     def user_params
         params.require(:user).permit(:email, :password, :password_confirmation)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> password controller
+=======
+>>>>>>> create sign up form
     end
 end
