@@ -2,11 +2,15 @@
 
 <%=form_with model: @user, url: sign_up_path, local: true, data: { turbo: false }  do |form|%>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <% if form.object.errors.any? %>
         <div class= "alert alert-danger">
             <% form.object.errors.full_messages.each do |message|%>
 =======
  
+=======
+   
+>>>>>>> create password controller
         </div>
     <%end%>
     <div class="mb-3">
@@ -26,9 +30,13 @@
 
     <div class="mb-3">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <%= form.submit "Sign Up", class: "btn btn-primary"%>
 =======
     <%= form.submit "Sign Up", class: "btn btn-primary"%>
 >>>>>>> create sign up form
+=======
+        <%= form.submit "Sign Up", class: "btn btn-primary"%>
+>>>>>>> create password controller
     </div>
 <%end%>
